@@ -12,9 +12,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Checkmate Academy — Master the Royal Game",
+  title: "Dash Chess Academy — Chess Classes, Clubs & Tournaments",
   description:
-    "A premier chess institute offering world-class coaching for beginners to grandmasters. Online and in-person classes, tournaments, and a thriving community.",
+    "Dash Chess Academy offers online and in-person chess classes, group lessons, school chess clubs, USCF-rated tournaments and Somerset County Chess Club meetups.",
 };
 
 export default function RootLayout({

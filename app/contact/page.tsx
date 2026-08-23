@@ -11,11 +11,11 @@ export default function ContactPage() {
       <section className="container-x py-12">
         <Reveal className="mx-auto max-w-2xl text-center">
           <h1 className="font-display text-4xl font-bold text-slate-900 sm:text-5xl">
-            Book Your <span className="gold-text">Free Trial</span>
+            Contact <span className="gold-text">Dash Chess Academy</span>
           </h1>
           <p className="mt-4 text-slate-500">
-            Tell us a little about yourself and we&apos;ll match you with the
-            perfect coach. We typically reply within one business day.
+            Ask about class placement, private lessons, online lessons, USCF
+            membership or bringing a tournament to your community.
           </p>
         </Reveal>
       </section>
@@ -30,24 +30,26 @@ export default function ContactPage() {
             <ul className="mt-6 space-y-5 text-sm">
               <li>
                 <div className="text-gold-700">Email</div>
-                <div className="text-slate-700">hello@checkmateacademy.com</div>
+                <div className="text-slate-700">
+                  dashchessacademy@dashnmore.com
+                </div>
               </li>
               <li>
                 <div className="text-gold-700">Phone</div>
-                <div className="text-slate-700">+1 (555) 013-2027</div>
+                <div className="text-slate-700">646-238-5213</div>
               </li>
               <li>
-                <div className="text-gold-700">Studio</div>
+                <div className="text-gold-700">Area</div>
                 <div className="text-slate-700">
-                  14 Grandmaster Lane, Suite 64
+                  Somerville and Somerset County, NJ
                   <br />
-                  Open Mon–Sat, 9am–8pm
+                  Online lessons also available
                 </div>
               </li>
             </ul>
             <div className="mt-8 rounded-xl border border-gold-400/30 bg-gold-50 p-4 text-sm text-slate-600">
-              ♞ Prefer to chat? Call us and we&apos;ll set up a no-pressure trial
-              lesson at a time that suits you.
+              ♞ We are happy to help with class placement, USCF membership and
+              tournament readiness.
             </div>
           </div>
         </Reveal>
@@ -69,7 +71,7 @@ export default function ContactPage() {
                 </h3>
                 <p className="mt-2 max-w-sm text-slate-500">
                   Your request is in. One of our coordinators will reach out
-                  shortly to schedule your free trial lesson.
+                  shortly to help with your chess plans.
                 </p>
               </div>
             ) : (
@@ -90,8 +92,8 @@ export default function ContactPage() {
                     <select className="input">
                       <option>Complete beginner</option>
                       <option>Casual / club player</option>
-                      <option>Intermediate (800–1600)</option>
-                      <option>Advanced (1600+)</option>
+                      <option>Beginner tournament player</option>
+                      <option>Competitive / serious player</option>
                     </select>
                   </div>
                   <div>
@@ -105,16 +107,16 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <Label>What are your goals?</Label>
+                  <Label>How can we help?</Label>
                   <textarea
                     rows={4}
-                    placeholder="e.g. I want to start competing in tournaments…"
+                    placeholder="e.g. I want help choosing a class or registering for a tournament..."
                     className="input resize-none"
                   />
                 </div>
 
                 <button type="submit" className="btn-primary w-full">
-                  Request Free Trial Lesson
+                  Send Message
                 </button>
               </div>
             )}

@@ -3,21 +3,21 @@ import Reveal from "./Reveal";
 const testimonials = [
   {
     quote:
-      "My son went from learning the rules to winning his school championship in under a year. The coaches genuinely care.",
-    author: "Priya M.",
-    role: "Parent of a junior student",
+      "The group classes give students structure, puzzles and real games in a friendly environment.",
+    author: "Group Classes",
+    role: "Lessons for the right age and skill level",
   },
   {
     quote:
-      "I was stuck at 1200 for years. The personalised analysis sessions pushed me past 1700. Worth every minute.",
-    author: "Marcus T.",
-    role: "Adult improver",
+      "The twice-monthly quads help players gain USCF-rated experience close to home.",
+    author: "Rated Tournaments",
+    role: "Sundays in Somerville, NJ",
   },
   {
     quote:
-      "The community is incredible. Daily practice games and study groups kept me motivated all the way to my first norm.",
-    author: "Aisha K.",
-    role: "Competitive player",
+      "Wednesday evening and Friday morning meetups welcome beginners, families and experienced players.",
+    author: "Somerset County Chess Club",
+    role: "Casual community chess",
   },
 ];
 
@@ -30,7 +30,7 @@ export default function Testimonials() {
             Student Stories
           </span>
           <h2 className="mt-3 font-display text-3xl font-bold text-slate-900 sm:text-4xl">
-            Loved by players worldwide
+            Classes, tournaments and community
           </h2>
         </Reveal>
 

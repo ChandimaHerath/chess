@@ -11,18 +11,18 @@ export default function CTA() {
               ♚
             </div>
             <h2 className="relative font-display text-3xl font-bold text-slate-900 sm:text-4xl">
-              Your best move starts today
+              Ready to join Dash Chess Academy?
             </h2>
             <p className="relative mx-auto mt-4 max-w-xl text-slate-600">
-              Book a free 30-minute trial lesson with one of our coaches. No
-              commitment — just a chance to feel the difference.
+              Improve your game, compete in tournaments or simply enjoy the
+              strategic beauty of chess with a community that loves the game.
             </p>
             <div className="relative mt-8 flex flex-wrap justify-center gap-4">
-              <Link href="/contact" className="btn-primary">
-                Claim Your Free Trial
+              <Link href="/classes" className="btn-primary">
+                View Schedule &amp; Register
               </Link>
-              <Link href="/programs" className="btn-ghost">
-                See Pricing &amp; Plans
+              <Link href="/contact" className="btn-ghost">
+                Contact Us for Placement
               </Link>
             </div>
           </div>

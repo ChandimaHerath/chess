@@ -3,16 +3,15 @@ import Coaches from "@/components/Coaches";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "About — Checkmate Academy",
+  title: "About — Dash Chess Academy",
   description:
-    "Learn about Checkmate Academy's mission, history and the team of titled coaches behind our students' success.",
+    "Learn about Dash Chess Academy, Coach Dash and the supportive chess community built through classes, clubs and tournaments.",
 };
 
 const milestones = [
-  { year: "2009", text: "Founded with a single classroom and 12 students." },
-  { year: "2014", text: "Launched our online platform, reaching 20 countries." },
-  { year: "2019", text: "First student earns an International Master title." },
-  { year: "2024", text: "Crossed 12,000 students trained worldwide." },
+  { year: "Classes", text: "In-person, online, group and individual lessons for students of all ages." },
+  { year: "Clubs", text: "School chess clubs and Somerset County Chess Club meetups for local players." },
+  { year: "Events", text: "USCF-rated quads hosted twice a month in Somerville, New Jersey." },
 ];
 
 export default function AboutPage() {
@@ -24,19 +23,19 @@ export default function AboutPage() {
             Our <span className="gold-text">Story</span>
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-slate-600">
-            Checkmate Academy began with a simple belief: chess teaches more than
-            tactics — it builds patience, foresight and resilience. For over a
-            decade we&apos;ve helped players of every age discover the joy of the
-            game and the confidence that comes with mastering it.
+            Dash Chess Academy believes in nurturing the chess talent within
+            everyone. From beginners to advanced competitors, students learn in
+            a warm, structured environment that supports growth on and off the
+            chessboard.
           </p>
         </Reveal>
       </section>
 
       <section className="container-x grid gap-6 py-12 sm:grid-cols-3">
         {[
-          { k: "Mission", v: "Make world-class chess coaching accessible to everyone, everywhere." },
-          { k: "Method", v: "Structured curricula, real-game analysis and one-on-one mentorship." },
-          { k: "Community", v: "A supportive global network of players who push each other to grow." },
+          { k: "Mission", v: "Help every player build confidence, skill and joy through chess." },
+          { k: "Method", v: "Structured lessons, puzzles, supervised games and practical feedback." },
+          { k: "Community", v: "A friendly New Jersey chess community built through classes, clubs and tournaments." },
         ].map((b, i) => (
           <Reveal key={b.k} delay={i * 0.1}>
             <div className="card h-full">
@@ -54,7 +53,7 @@ export default function AboutPage() {
       <section className="container-x py-16">
         <Reveal className="mb-10 text-center">
           <h2 className="font-display text-3xl font-bold text-slate-900">
-            Milestones
+            What we offer
           </h2>
         </Reveal>
         <div className="mx-auto max-w-2xl">

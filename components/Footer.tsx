@@ -8,12 +8,12 @@ export default function Footer() {
           <div className="flex items-center gap-2.5">
             <span className="text-2xl">♞</span>
             <span className="font-display text-lg font-bold text-slate-900">
-              Checkmate <span className="gold-text">Academy</span>
+              Dash <span className="gold-text">Chess Academy</span>
             </span>
           </div>
           <p className="mt-4 max-w-xs text-sm text-slate-500">
-            Training the next generation of strategic thinkers — one move at a
-            time.
+            Structured classes, rated tournaments and a welcoming Somerset
+            County chess community.
           </p>
         </div>
 
@@ -22,7 +22,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-slate-500">
             <li>
               <Link href="/programs" className="hover:text-gold-700">
-                Programs
+                Classes
               </Link>
             </li>
             <li>
@@ -41,9 +41,9 @@ export default function Footer() {
         <div>
           <h4 className="text-sm font-semibold text-slate-900">Contact</h4>
           <ul className="mt-4 space-y-2 text-sm text-slate-500">
-            <li>hello@checkmateacademy.com</li>
-            <li>+1 (555) 013-2027</li>
-            <li>14 Grandmaster Lane, Suite 64</li>
+            <li>dashchessacademy@dashnmore.com</li>
+            <li>646-238-5213</li>
+            <li>Somerville &amp; Somerset County, NJ</li>
           </ul>
         </div>
 
@@ -67,7 +67,7 @@ export default function Footer() {
 
       <div className="border-t border-slate-200 py-6">
         <p className="container-x text-center text-xs text-slate-400">
-          © {new Date().getFullYear()} Checkmate Academy. All rights reserved.
+          © {new Date().getFullYear()} Dash Chess Academy. All rights reserved.
         </p>
       </div>
     </footer>

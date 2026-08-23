@@ -2,40 +2,40 @@ import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Gallery — Checkmate Academy",
+  title: "Gallery — Dash Chess Academy",
   description:
-    "See moments from Checkmate Academy classes, tournaments, coaching sessions and student celebrations.",
+    "See moments from Dash Chess Academy tournaments and the Somerset County Chess Club community.",
 };
 
 const gallery = [
   {
-    title: "Opening Lab",
-    caption: "Students compare plans from classic queen's pawn structures.",
+    title: "Tournament Rounds",
+    caption: "USCF-rated quads with focused players, clocks and notation.",
     piece: "♕",
   },
   {
-    title: "Rapid League",
-    caption: "Weekend rounds with clocks, notation and coach observations.",
+    title: "Quad Groups",
+    caption: "Players grouped by rating for fair, competitive games.",
     piece: "♜",
   },
   {
-    title: "Junior Class",
-    caption: "Young players build confidence with puzzles and friendly games.",
+    title: "Medal Moments",
+    caption: "Celebrating effort, sportsmanship and strong tournament results.",
     piece: "♙",
   },
   {
-    title: "Game Review",
-    caption: "Coaches turn missed chances into clear training targets.",
+    title: "Club Meetups",
+    caption: "Kids, adults and seniors playing together at Raritan Library.",
     piece: "♗",
   },
   {
-    title: "Awards Day",
-    caption: "Celebrating effort, sportsmanship and rating milestones.",
+    title: "Puzzle Challenges",
+    caption: "Friendly weekly practice for learners of every experience level.",
     piece: "♔",
   },
   {
-    title: "Team Practice",
-    caption: "Study groups prepare together before local events.",
+    title: "Community Games",
+    caption: "Wednesday evening and Friday morning chess in Somerset County.",
     piece: "♞",
   },
 ];
@@ -46,14 +46,15 @@ export default function GalleryPage() {
       <section className="container-x py-12 text-center">
         <Reveal className="mx-auto max-w-3xl">
           <span className="text-sm font-semibold uppercase tracking-widest text-gold-700">
-            Academy Moments
+            Gallery
           </span>
           <h1 className="mt-3 font-display text-4xl font-bold text-slate-900 sm:text-5xl">
-            Student <span className="gold-text">Gallery</span>
+            Tournament &amp; Club <span className="gold-text">Photos</span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-slate-500">
-            A snapshot of the classrooms, boards, trophies and shared effort
-            that make Checkmate Academy a lively chess community.
+            A look into our tournaments and the growing Somerset County chess
+            community. Add your tournament and club photos here as the gallery
+            grows.
           </p>
         </Reveal>
       </section>

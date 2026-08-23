@@ -9,7 +9,6 @@ const links = [
   { href: "/tournaments", label: "Tournaments" },
   { href: "/gallery", label: "Gallery" },
   { href: "/somerset-country-chess-club", label: "Somerset Club" },
-  { href: "/programs", label: "Programs" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -37,7 +36,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2.5">
           <span className="text-2xl">♞</span>
           <span className="font-display text-lg font-bold tracking-wide text-slate-900">
-            Checkmate <span className="gold-text">Academy</span>
+            Dash <span className="gold-text">Chess Academy</span>
           </span>
         </Link>
 
@@ -52,7 +51,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link href="/contact" className="btn-primary">
-            Book a Free Trial
+            Contact Us
           </Link>
         </div>
 
@@ -83,7 +82,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="btn-primary mt-2"
             >
-              Book a Free Trial
+              Contact Us
             </Link>
           </div>
         </div>

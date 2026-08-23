@@ -1,13 +1,13 @@
-# Checkmate Academy — Chess Institute Website
+# Dash Chess Academy — Chess Website
 
-A modern, animated marketing site for a chess institute, built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS** and **Framer Motion**.
+A modern, animated site for Dash Chess Academy, built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS** and **Framer Motion**.
 
 ## Highlights
 
 - 🎬 **Animated chessboard hero** — pieces glide through Morphy's famous *Opera Game* (1858) on an endless loop, with last-move highlighting. Respects `prefers-reduced-motion`.
 - ✨ Smooth scroll-reveal animations throughout.
 - 📱 Fully responsive, dark "premium" theme with gold accents.
-- 📄 Pages: **Home**, **Programs & Pricing**, **About**, **Contact** (with a working demo form).
+- 📄 Pages: **Home**, **Classes**, **Tournaments**, **Gallery**, **Somerset County Chess Club**, **Programs**, **About** and **Contact**.
 - ♟ No image assets required — pieces use Unicode glyphs.
 
 ## Getting started
@@ -32,9 +32,12 @@ npm start
 app/
   layout.tsx          # Root layout, fonts, navbar + footer
   page.tsx            # Landing page
-  programs/page.tsx   # Programs & pricing
+  classes/page.tsx    # Classes and groups
+  tournaments/page.tsx # USCF-rated tournament details
+  gallery/page.tsx    # Tournament and club gallery
+  programs/page.tsx   # Program paths
   about/page.tsx      # About + timeline + coaches
-  contact/page.tsx    # Contact / trial-booking form
+  contact/page.tsx    # Contact form
   globals.css         # Tailwind + custom theme styles
 components/
   AnimatedChessBoard.tsx  # ⭐ the animated hero board

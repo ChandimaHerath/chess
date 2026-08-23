@@ -4,51 +4,46 @@ import Programs from "@/components/Programs";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Programs & Pricing — Checkmate Academy",
+  title: "Programs — Dash Chess Academy",
   description:
-    "Explore our chess programs for every level, from absolute beginner to advanced competitor, with flexible monthly plans.",
+    "Explore Dash Chess Academy classes, groups, school clubs, tournaments and private lesson options.",
 };
 
 const plans = [
   {
-    name: "Casual",
-    price: "$49",
-    period: "/month",
+    name: "Find the Right Class",
     features: [
-      "2 group classes / week",
-      "Weekly puzzle sets",
-      "Community access",
-      "Monthly progress report",
+      "In-person and online options",
+      "Group placement by age and skill",
+      "Private lessons available",
+      "Tournament preparation support",
     ],
-    cta: "Get Started",
+    cta: "View Classes",
+    href: "/classes",
     featured: false,
   },
   {
-    name: "Serious",
-    price: "$119",
-    period: "/month",
+    name: "Play Rated Events",
     features: [
-      "4 group classes / week",
-      "2 game-analysis sessions",
-      "Personalised study plan",
-      "Tournament preparation",
-      "Priority community support",
+      "USCF-rated quads",
+      "Twice a month on Sundays",
+      "Somerville, New Jersey",
+      "All ages and ratings welcome",
     ],
-    cta: "Most Popular",
+    cta: "See Dates",
+    href: "/tournaments",
     featured: true,
   },
   {
-    name: "Elite",
-    price: "$249",
-    period: "/month",
+    name: "Join the Club",
     features: [
-      "Weekly 1-on-1 with a GM/IM",
-      "Unlimited group classes",
-      "Deep opening preparation",
-      "Custom training database",
-      "Norm & title roadmap",
+      "Wednesday evening meetups",
+      "Friday morning meetups",
+      "No registration needed",
+      "Raritan Public Library",
     ],
-    cta: "Apply Now",
+    cta: "Visit Club Page",
+    href: "/somerset-country-chess-club",
     featured: false,
   },
 ];
@@ -59,11 +54,11 @@ export default function ProgramsPage() {
       <section className="container-x py-12 text-center">
         <Reveal>
           <h1 className="font-display text-4xl font-bold text-slate-900 sm:text-5xl">
-            Programs &amp; <span className="gold-text">Pricing</span>
+            Dash Chess <span className="gold-text">Programs</span>
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-slate-500">
-            Flexible plans that grow with you. Switch or cancel anytime — every
-            plan starts with a free trial lesson.
+            Choose structured instruction, rated tournament play or casual
+            community chess through Dash Chess Academy.
           </p>
         </Reveal>
       </section>
@@ -83,20 +78,12 @@ export default function ProgramsPage() {
               >
                 {p.featured && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-gold-400 to-gold-600 px-4 py-1 text-xs font-semibold text-slate-900">
-                    Most Popular
+                    Rated Events
                   </span>
                 )}
                 <h3 className="font-display text-xl font-bold text-slate-900">
                   {p.name}
                 </h3>
-                <div className="mt-4 flex items-end gap-1">
-                  <span className="font-display text-4xl font-bold text-gold-600">
-                    {p.price}
-                  </span>
-                  <span className="pb-1 text-sm text-slate-500">
-                    {p.period}
-                  </span>
-                </div>
                 <ul className="mt-6 space-y-3 text-sm text-slate-600">
                   {p.features.map((f) => (
                     <li key={f} className="flex items-start gap-2">
@@ -105,7 +92,7 @@ export default function ProgramsPage() {
                   ))}
                 </ul>
                 <Link
-                  href="/contact"
+                  href={p.href}
                   className={`mt-8 w-full ${
                     p.featured ? "btn-primary" : "btn-ghost"
                   }`}
