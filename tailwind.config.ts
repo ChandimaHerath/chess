@@ -46,11 +46,17 @@ const config: Config = {
           "0%": { backgroundPosition: "-200% 0" },
           "100%": { backgroundPosition: "200% 0" },
         },
+        "marquee-right": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.7s ease-out forwards",
         float: "float 6s ease-in-out infinite",
         shimmer: "shimmer 6s linear infinite",
+        "marquee-slow": "marquee-right 50s linear infinite",
+        "marquee-fast": "marquee-right 28s linear infinite",
       },
     },
   },
